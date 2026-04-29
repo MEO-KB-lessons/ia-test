@@ -10,9 +10,9 @@ Bank Account System - Консольное банковское приложен
 
 import sys  # Для системных операций (например, выход из программы)
 from datetime import datetime  # Для работы с датами при фильтрации
-from controllers import BankController  # Импорт контроллера
-from views import ConsoleView  # Импорт представления
-from utils import JSONStorage  # Импорт хранилища JSON
+from controllers.bank_controller import BankController  # Импорт контроллера
+from views.console_view import ConsoleView  # Импорт представления
+from utils.json_storage import JSONStorage  # Импорт хранилища JSON
 
 class BankApplication:
     """
@@ -211,4 +211,6 @@ def main():
 # Точка входа в программу
 if __name__ == "__main__":
     main()
+
+
 
