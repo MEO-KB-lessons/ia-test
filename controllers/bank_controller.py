@@ -5,10 +5,11 @@
 
 from typing import Dict, Optional, List  # Аннотации типов
 from datetime import datetime  # Для работы с датами
-from models import (
-    Account, CheckingAccount, SavingsAccount, CreditAccount,
-    Transaction, TransactionType, TransactionHistoryQueue
+from models.account import (
+    Account, CheckingAccount, SavingsAccount, CreditAccount
 )
+from models.transaction import Transaction, TransactionType
+from models.transaction_queue import TransactionHistoryQueue
 
 class BankController:
     """
@@ -280,4 +281,3 @@ class BankController:
             controller.transaction_queues[acc_num] = TransactionHistoryQueue.from_dict(queue_data)
         
         return controller
-
