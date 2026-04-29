@@ -6,7 +6,7 @@
 from collections import deque  # Двусторонняя очередь с ограничением размера
 from typing import List, Optional  # Аннотации типов
 from datetime import datetime  # Для работы с датами
-from .transaction import Transaction, TransactionType  # Импорт классов транзакций
+from models.transaction import Transaction, TransactionType  # Импорт классов транзакций
 
 class TransactionHistoryQueue:
     """
@@ -113,4 +113,3 @@ class TransactionHistoryQueue:
         - int: количество транзакций в очереди
         """
         return len(self.queue)
-
