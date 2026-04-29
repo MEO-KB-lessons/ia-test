@@ -1,2 +1,10 @@
 *.cfg
 *.json
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+.idea/
+.vscode/
